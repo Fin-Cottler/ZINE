@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/ZINE_emoticon.png">
+
+    <title>ZINE - Projects</title>
+</head>
+<body onload = "showProjects()">
+
+    <div id="container">
+        <div id="banner">
+            <div id="menu">
+                <button id="logout" class = "menubutton" title="Log Out">
+                    <span class="material-symbols-outlined">
+                        logout
+                    </span>
+                </button>
+            </div>
+
+            <div id="content-container">
+                <div id="content">
+                    <div id="title">
+                        Projects
+                    </div>
+                    <button id="addproject" onclick="newProject()">+</button>
+                </div>
+
+                <div id="color-block"></div>
+
+                <img id="background-image" src="images/Background.jpeg">
+            </div>
+            
+        </div>
+
+        <div id = allProjects> </div>
+
+        <!-- <div id="projectNamePicker">
+            <label id = "inputText">Project Name:</label><br>
+            <input id = enterProjectName></input>
+            <button id = "submitButton" onclick="newProject();document.getElementById('enterProjectName').value = ''; hideInput();">submit</button>
+        </div>
+
+        -->
+
+    </div>
+    <script type="module" src="script.js"></script>
+    <script type="module">
+        import {newProject, displayInput, showProjects, hideInput, displayNewProjectButton, checkLogin} from './script.js';
+        window.newProject = newProject;
+        window.displayInput = displayInput;
+        window.showProjects = showProjects;
+        window.hideInput = hideInput;
+        window.displayNewProjectButton = displayNewProjectButton;
+        window.checkLogin = checkLogin;
+    </script>
+</body>
+</html>
+
+
+<!-- <a onclick = "displayInput();" style = "text-decoration: none">
+    <div class="projects">
+        <p id="plus">+</p>
+        <br>
+        <p id="projectText">New Project</p>
+    </div>
+</a> -->
