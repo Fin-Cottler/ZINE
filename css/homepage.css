@@ -67,7 +67,7 @@ html {
 
 
 #allProjects{
-    margin-top: 340px;
+    margin-top: 350px;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -215,3 +215,4 @@ html {
     background-color: rgb(136, 136, 136);
     transition: .2s ease;
 }
+
