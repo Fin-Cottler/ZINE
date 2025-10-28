@@ -1,0 +1,217 @@
+*{
+    margin:0;
+    padding:0;
+    user-select: none;
+
+}
+html {
+    overflow-x: hidden;
+
+}
+
+#container{
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+
+
+#banner, #menu, #content, #color-block, #background-image{
+    position: absolute;
+    width: 100%;
+}
+
+#banner, #content, #color-block, #background-image{
+    height: 330px;
+}
+
+
+
+#banner{
+    border-bottom: 20px solid #3859A8;
+}
+#menu{
+    z-index: 4;
+    height: 30px;
+}
+#content {
+    z-index: 3;
+    text-align: center;
+
+}
+#title{
+    position: relative;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+    font-weight: 1000;
+    font-size: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#new-project{
+    position: relative;
+    top: 40%;
+
+}
+#color-block {
+    z-index: 2;
+    background-image: linear-gradient(to top, #3859A8, #168668);
+    opacity: 60%;
+
+}
+#background-image {
+    z-index: 1;
+    object-fit: cover;
+}
+
+
+#allProjects{
+    margin-top: 340px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+#addproject{
+    top: 40%;
+    position: relative;
+    text-align: center;
+    transition: .6s ease;
+    border: none;
+    margin-inline: .01rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 40px;
+    background-color: rgb(255, 255, 255, .25);
+    border-radius: 100%;
+    color: white;
+}
+
+#addproject:hover {
+    background-color: rgb(255, 255, 255,.425);
+
+}
+
+#addproject:active {
+    background-color: rgb(255, 255, 255, .60);
+
+}
+
+.menubutton {
+    text-align: center;
+    transition: .6s ease;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border-radius: 7px;
+    color: white;
+    margin-top: 10px;
+    margin-inline: 10px;
+}
+
+
+.menubutton:hover{
+    background-color: rgb(255, 255, 255, .25);
+
+}
+
+.menubutton:active {
+    background-color: rgb(255, 255, 255, .5);
+}
+
+#logout {
+    float: right;
+}
+
+.gray{
+    background-color: rgb(226, 226, 226);
+}
+.white{    
+    background-color: rgb(255, 255, 255);
+}
+.project {
+    height: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    align-content: center; 
+    
+}
+.project:hover {
+    background-color: #d6ddeb;
+    
+}
+
+
+.logo{
+    height: 35px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.name{                          
+    grid-column-start: 2;
+    grid-column-end: 6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+
+}
+.access-label{                          
+    grid-column-start: 6;
+    grid-column-end: 7;
+    color:rgb(153, 153, 153);
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+    float: right;
+}
+.click-box{
+    grid-column-start: 1;
+    grid-column-end: 12;
+    display: grid;
+    align-items: center;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.access-date{
+    grid-column-start: 8;
+    grid-column-end: 12;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+
+
+}
+.delete-button{
+    color: black;
+    grid-column-start: 12;
+    grid-column-end: 13;
+    text-align: center;
+    transition: .6s ease;
+    border: none;
+    margin-inline: .01rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border-radius: 7px;
+    
+}
+.delete-button:hover{
+    background-color: rgb(206, 206, 206);
+}
+
+.delete-button:active{
+    background-color: rgb(136, 136, 136);
+    transition: .2s ease;
+}
