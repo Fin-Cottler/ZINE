@@ -1264,6 +1264,8 @@ export const loadProject = async function () {
       makePageNums(page);
     }else{
       document.getElementById("project-title").innerHTML = doc.data().displayName;
+      document.title = "ZINE - " + doc.data().displayName;
+
     }
   });
 
@@ -2080,6 +2082,8 @@ export const loadProjectPrint = async function () {
         }
       }
 
+    } else {
+        document.title = "ZINE - Print - " + doc.data().displayName;
     }
   });
 
