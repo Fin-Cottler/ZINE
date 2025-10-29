@@ -42,7 +42,7 @@ html {
 }
 
 .header {
-    font-size: 60pt;
+    font-size: 72pt;
     font-weight: bold;
 }
 label{
@@ -127,4 +127,5 @@ label{
 
 img{
     width: 90%;
+
 }
